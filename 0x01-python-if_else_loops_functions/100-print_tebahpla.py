@@ -1,8 +1,3 @@
 #!/usr/bin/python3
-for i in range(ord('z'), ord('a') - 1, -1):
-    if i % 2 == 0:
-        diff = 0
-    else:
-        diff = 32
-        print('{}'.format(chr(i - diff)), end='')
-
+for letr in range(122, 96, -1):
+    print("{:c}".format(letr if (letr % 2 == 0) else (letr - 32)), end='')
